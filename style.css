@@ -191,9 +191,6 @@ a {
 }
 
 @media only screen and (max-width: 719px) and (min-width: 511px) {
-    .vr{
-        margin-top: 100px;
-    }
     .head1 {
         font-size: 70px;
         top: 164px;
@@ -212,9 +209,6 @@ a {
     .head4 {
         font-size: 25px;
         top: 451px;
-    }
-    .titles{
-
     }
 }
 
