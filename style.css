@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family: 'Staatliches';
 }
 
+/* Navigation bar  */
 .nav {
     height: 80px;
     /* background-color: black; */
@@ -11,7 +13,7 @@ body {
     align-items: center;
 }
 
-.logo{
+.logo {
     flex: 1;
 }
 
@@ -21,18 +23,18 @@ img {
     height: 57px;
 }
 
-.menu{
+.menu {
     display: flex;
     width: 60%;
     justify-content: space-evenly;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-.menu-links{
+.menu-links {
     list-style-type: none;
     color: white;
     display: flex;
@@ -42,19 +44,19 @@ a{
     font-size: 25px;
 }
 
-.menu-links>a:hover{
-    color:#78C9F9;
+.menu-links>a:hover {
+    color: #78C9F9;
 }
 
-.open{
+.open {
     /* margin-top: 30px; */
-    display: none; 
+    display: none;
     position: absolute;
     right: 75px;
     top: 30px;
 }
 
-.line{
+.line {
     width: 30px;
     height: 4px;
     background-color: white;
@@ -62,7 +64,7 @@ a{
     transition: all 0.5s;
 }
 
-.background{
+.background {
     display: none;
     position: fixed;
     background-image: radial-gradient(rgba(0, 108, 180, 0.7), rgb(0, 63, 105, .7));
@@ -74,16 +76,17 @@ a{
     z-index: -1;
 }
 
-@media(max-width: 1000px){
-    .open{
+@media(max-width: 1000px) {
+    .open {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .menu-links{
+
+    .menu-links {
         flex-direction: column;
         text-align: center;
-        position:absolute;
+        position: absolute;
         height: 92vh;
         top: 60px;
         width: 100vw;
@@ -94,7 +97,138 @@ a{
         align-items: center;
     }
 
-    .background{
+    .background {
         display: block;
+    }
+}
+
+/* Navigation bar end  */
+
+/* Home page  */
+
+.home-ball {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 96px;
+    top: 345px;
+    background: #537FE7;
+    border-radius: 50%;
+}
+
+.vr {
+    height: 50vh;
+    border-left: solid 4px #537FE7;
+    margin-top: 290px;
+    margin-left: 118px;
+    display: flex;
+}
+
+.titles{
+    display: flex;
+}
+
+.head1 {
+    position: absolute;
+    /* width: 690px;
+    height: 150px; */
+    left: 171px;
+    top: 101px;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 150px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.head2 {
+    position: absolute;
+    /* width: 585px;
+    height: 188px; */
+    left: 173px;
+    top: 159px;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 188px;
+    /* identical to box height */
+
+
+    color: #78C9F9;
+}
+
+.head3 {
+    position: absolute;
+    /* width: 591px;
+    height: 188px; */
+    left: 173px;
+    top: 279px;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 188px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.head4 {
+    position: absolute;
+    /* width: 592px;
+    height: 41px; */
+    left: 173px;
+    top: 562px;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 41px;
+
+    color: #78C9F9;
+
+}
+
+@media only screen and (max-width: 719px) and (min-width: 511px){
+    .head1{
+        font-size: 70px;
+    }
+    .head2{
+        font-size: 90px;
+    }
+    .head3{
+        font-size: 90px;
+    }
+    .head4{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 510px){
+    .head1{
+        top: 236px;
+        font-size: 30px;
+    }
+    .head2{
+        top: 235px;
+        font-size: 50px;
+    }
+    .head3{
+        top: 279px;
+        font-size: 50px;
+    }
+    .head4{
+        top: 425px;
+        font-size: 10px;
     }
 }
