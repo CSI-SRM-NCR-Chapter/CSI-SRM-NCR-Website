@@ -11,6 +11,7 @@ body {
     /* background-color: black; */
     display: flex;
     align-items: center;
+    z-index: +2;
 }
 
 .logo {
@@ -44,6 +45,7 @@ a {
     font-weight: 400;
     font-size: 25px;
     font-family: 'Rubik';
+    z-index: +3;
 }
 
 .menu-links>a:hover {
