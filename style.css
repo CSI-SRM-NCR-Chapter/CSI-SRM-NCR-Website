@@ -76,6 +76,7 @@ a {
     border-radius: 100%;
     transition: all 0.5s;
     z-index: -1;
+    opacity: 100%;
 }
 
 @media(max-width: 1000px) {
@@ -92,7 +93,7 @@ a {
         height: 70vh;
         top: 60px;
         width: 100vw;
-        right: 100%;
+        left: 100%;
         font-size: 30px;
         justify-content: center;
         justify-content: space-evenly;
@@ -123,11 +124,7 @@ a {
     border-left: solid 4px #537FE7;
     margin-top: 290px;
     margin-left: 118px;
-    display: flex;
-}
-
-.titles {
-    display: flex;
+    /* display: flex; */
 }
 
 .head1 {
@@ -245,3 +242,56 @@ a {
         left: 60px;
     }
 }
+
+.view {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.csi-logo {
+    width: 354px;
+    height: 354px;
+    /* position: relative;
+    left: 700px;
+    top: -135px;
+    display: flex; */
+    position: relative;
+    top: -130px;
+    right: 75px;
+}
+
+@media(max-width:1156px){
+    .csi-logo{
+        width: 250px;
+        height: 250px;
+        padding-top: 55px;
+    }
+}
+
+@media(max-width: 1015px){
+    .view{
+        flex-direction: column;
+    }
+    .csi-logo{
+        top: 250px;
+        left: 70px;
+    }
+}
+
+@media (max-width: 723px) {
+    .csi-logo{
+        width: 150px;
+        height: 150px;
+        top: 120px;
+        left: 20px;
+    }
+}
+
+@media(max-width:510px){
+    .csi-logo{
+        top: 50px;
+        left: -35px;
+    }
+}
+
+/* Home page end */
