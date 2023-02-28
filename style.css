@@ -122,7 +122,7 @@ a {
 }
 
 .vr {
-    height: 50vh;
+    height: 310vh;
     border-left: solid 4px #537FE7;
     margin-top: 290px;
     margin-left: 118px;
@@ -297,3 +297,266 @@ a {
 }
 
 /* Home page end */
+
+/* About page  */
+
+.about-ball {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 105px;
+    top: 1065px;
+
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.about-head {
+    position: absolute;
+    width: 339px;
+    height: 119px;
+    left: 62px;
+    top: -130px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 118px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+
+@media(max-width: 510px) {
+    .about-ball {
+        left: 66px;
+        top: 960px;
+    }
+
+    .about-head {
+        font-size: 50px;
+        top: -98px;
+    }
+}
+
+.csi-ball {
+    position: absolute;
+    width: 28.73px;
+    height: 28.73px;
+    left: 105px;
+    top: 1300px;
+
+    background: #78C9F9;
+    border-radius: 50%;
+}
+
+.csi-head {
+    width: 150px !important;
+    position: absolute;
+    left: 50px;
+    top: -100px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 95px;
+    color: #78C9F9;
+}
+
+.csi-text {
+    /* position: absolute; */
+    width: 1191px;
+    height: 288px;
+    /* left: 153px;
+    top: 1435px; */
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+@media(max-width:1156px){
+    .csi-text{
+        width: 700px;
+    }
+}
+
+@media(max-width: 766px){
+    .csi-text{
+        width: 500px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 511px){
+    .csi-ball{
+        left: 68px;
+    }
+    .csi-text{
+        width: 200px;
+    }
+}
+
+.cse-ball{
+    position: absolute;
+    width: 28.73px;
+    height: 28.73px;
+    left: 105px;
+    top: 1800px;
+
+    background: #78C9F9;
+    border-radius: 50%;
+}
+
+.cse-head{
+    width: 600px !important;
+    position: absolute;
+    left: 50px;
+    top: -100px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 95px;
+    color: #78C9F9;
+}
+
+.cse-text{
+    /* position: absolute; */
+    width: 1191px;
+    height: 288px;
+    /* left: 153px;
+    top: 1435px; */
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+@media(max-width:1156px){
+    .cse-text{
+        width: 700px;
+    }
+}
+
+@media(max-width: 766px){
+    .cse-ball{
+        top: 1885px;
+    }
+    .cse-section{
+        padding-top: 100px;
+    }
+    .cse-text{
+        width: 500px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 511px){
+    .cse-ball{
+        left: 68px;
+        top: 2700px;
+    }
+    .cse-head{
+        font-size: 30px;
+        top: -65px;
+    }
+    .cse-text{
+        width: 200px;
+    }
+}
+
+.srm-ball{
+    position: absolute;
+    width: 28.73px;
+    height: 28.73px;
+    left: 105px;
+    top: 2300px;
+
+    background: #78C9F9;
+    border-radius: 50%;
+}
+
+.srm-head{
+    width: 250px !important;
+    position: absolute;
+    left: 50px;
+    top: -100px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 95px;
+    color: #78C9F9;
+}
+
+.srm-text{
+    /* position: absolute; */
+    width: 1191px;
+    height: 288px;
+    /* left: 153px;
+    top: 1435px; */
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+@media(max-width:1156px){
+    .srm-text{
+        width: 700px;
+    }
+}
+
+@media(max-width: 766px){
+    .srm-ball{
+        top: 2495px;
+    }
+    .srm-section{
+        padding-top: 100px;
+    }
+    .srm-text{
+        width: 500px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 511px){
+    .srm-ball{
+        left: 68px;
+        top: 4110px;
+    }
+    .srm-head{
+        font-size: 30px;
+        top: -65px;
+    }
+    .srm-text{
+        width: 200px;
+    }
+    .vr{
+        height: 550vh;
+    }
+}
+
+/* About page end  */
