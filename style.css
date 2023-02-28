@@ -122,7 +122,7 @@ a {
 }
 
 .vr {
-    height: 310vh;
+    height: 410vh;
     border-left: solid 4px #537FE7;
     margin-top: 290px;
     margin-left: 118px;
@@ -346,8 +346,8 @@ a {
     position: absolute;
     width: 28.73px;
     height: 28.73px;
-    left: 105px;
-    top: 1300px;
+    left: 106px;
+    top: 1240px;
 
     background: #78C9F9;
     border-radius: 50%;
@@ -410,7 +410,7 @@ a {
     position: absolute;
     width: 28.73px;
     height: 28.73px;
-    left: 105px;
+    left: 106px;
     top: 1800px;
 
     background: #78C9F9;
@@ -485,7 +485,7 @@ a {
     position: absolute;
     width: 28.73px;
     height: 28.73px;
-    left: 105px;
+    left: 106px;
     top: 2300px;
 
     background: #78C9F9;
@@ -527,6 +527,9 @@ a {
     .srm-text{
         width: 700px;
     }
+    .vr{
+        height: 400vh;
+    }
 }
 
 @media(max-width: 766px){
@@ -539,6 +542,9 @@ a {
     .srm-text{
         width: 500px;
         font-size: 25px;
+    }
+    .vr{
+        height: 2645px;
     }
 }
 
@@ -555,7 +561,7 @@ a {
         width: 200px;
     }
     .vr{
-        height: 550vh;
+        height: 750vh;
     }
 }
 
