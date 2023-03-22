@@ -141,7 +141,7 @@ a {
 }
 
 .vr {
-    height: 900vh;
+    height: 1200vh;
     border-left: solid 4px #537FE7;
     margin-top: 290px;
     margin-left: 118px;
@@ -301,15 +301,15 @@ a {
 }
 
 @media (max-width: 723px) {
-    .head1{
+    .head1 {
         top: 200px;
     }
 
-    .head2{
+    .head2 {
         top: 250px;
     }
 
-    .head3{
+    .head3 {
         top: 325px;
     }
 
@@ -322,17 +322,18 @@ a {
 }
 
 @media(max-width:510px) {
-    .head1{
+    .head1 {
         top: 230px;
     }
 
-    .head3{
+    .head3 {
         top: 295px;
     }
 
-    .head4{
+    .head4 {
         top: 400px;
     }
+
     .csi-logo {
         width: 250px;
         height: 165px;
@@ -436,9 +437,10 @@ a {
 }
 
 @media(max-width:1156px) {
-    .csi-head{
+    .csi-head {
         top: -95px;
     }
+
     .csi-text {
         width: 700px;
     }
@@ -639,7 +641,7 @@ a {
 
 /* Leads page  */
 
-#leads{
+#leads {
     padding-top: 150px;
 }
 
@@ -761,8 +763,8 @@ a {
 }
 
 .card__link {
-    width: 20px;
-    height: 20px;
+    /* width: 20px;
+    height: 20px; */
     display: block;
     /* width: max-content; */
     margin: .5rem .5rem;
@@ -781,8 +783,8 @@ a {
 }
 
 .socials {
-    margin-top: 15px;
-    margin-left: 75px;
+    margin-top: 25px;
+    margin-left: 65px;
     display: flex;
 }
 
@@ -820,35 +822,218 @@ p {
 }
 
 @media(max-width: 766px) {
-    #leads{
+    #leads {
         position: relative;
         top: 200px;
     }
 
-    .leads-head{
+    .leads-head {
         font-size: 40px;
     }
 }
 
 @media(max-width: 511px) {
-    #leads{
+    #leads {
         position: relative;
         top: 2200px;
     }
 
-    .leads-ball{
+    .leads-ball {
         width: 35px;
         height: 35px;
         left: -20px;
     }
 
-    .leads-head{
+    .leads-head {
         font-size: 30px;
         left: 55px;
     }
 
-    .card{
+    .card {
         position: relative;
         left: -20px;
     }
+}
+
+/* Leads End  */
+
+/* Registration */
+
+.reg-ball {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #537FE7;
+    position: relative;
+    top: 90px;
+    right: 20px;
+}
+
+.reg-head {
+    width: 500px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 95px;
+    color: #537FE7;
+    position: relative;
+    left: 80px;
+    bottom: 35px;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+:root {
+  --main-blue: #71b7e6;
+  --main-purple: #9b59b6;
+  --main-grey: #ccc;
+  --sub-grey: #d9d9d9;
+}
+
+/* body {
+  display: flex;
+  height: 100vh;
+  justify-content: center; center vertically 
+  align-items: center;  center horizontally 
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  padding: 10px;
+} */
+/* container and form */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  position: relative;
+  top: 150px;
+  left: 60px;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* .container .title::before {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 30px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  left: 0;
+  bottom: 0;
+} */
+
+.container form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+/* inside the form user details */
+form .user__details .input__box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.user__details .input__box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.user__details .input__box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user__details .input__box input:focus,
+.user__details .input__box input:valid {
+  border-color: var(--main-purple);
+}
+
+@media only screen and (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .gender__details .category {
+    width: 100%;
+  }
+
+  .container form .user__details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user__details::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@media(max-width: 766px){
+    #register{
+        position: relative;
+        top: 200px;
+    }
+}
+
+@media(max-width: 511px){
+    #register{
+        position: relative;
+        top: 2300px;
+    }
+
+    .reg-head{
+        font-size: 50px;
+    }
+}
+
+/* Registration End  */
+
+/* Contact starts */
+
+#contact{
+    margin-top: 250px;
+}
+
+.contact-ball {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #537FE7;
+    position: relative;
+    top: 90px;
+    right: 20px;
+}
+
+.contact-head {
+    width: 500px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 95px;
+    color: #537FE7;
+    position: relative;
+    left: 80px;
+    bottom: 35px;
 }
