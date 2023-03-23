@@ -141,7 +141,7 @@ a {
 }
 
 .vr {
-    height: 1200vh;
+    height: 1350vh;
     border-left: solid 4px #537FE7;
     margin-top: 290px;
     margin-left: 118px;
@@ -226,8 +226,10 @@ a {
     }
 
     .head4 {
+        width: 255px;
         font-size: 25px;
         top: 451px;
+        text-align: center;
     }
 }
 
@@ -251,19 +253,25 @@ a {
     }
 
     .head4 {
+        width: 140px;
         top: 420px;
         left: 130px;
-        font-size: 10px;
-        justify-self: center;
+        font-size: 15px;
+        text-align: center;
     }
 
     .vr {
-        margin-left: 80px;
+        height: 5000vh;
+        margin-left: 60px;
         top: 200px;
     }
 
     .home-ball {
         left: 60px;
+    }
+
+    .circle{
+        left: 37px;
     }
 }
 
@@ -386,7 +394,7 @@ a {
 
 @media(max-width: 510px) {
     .about-ball {
-        left: 66px;
+        left: 46px;
         top: 960px;
     }
 
@@ -458,7 +466,7 @@ a {
 
 @media(max-width: 511px) {
     .csi-ball {
-        left: 68px;
+        left: 48px;
         top: 1140px;
     }
 
@@ -535,7 +543,7 @@ a {
 
 @media(max-width: 511px) {
     .cse-ball {
-        left: 68px;
+        left: 48px;
         top: 1910px;
     }
 
@@ -619,13 +627,13 @@ a {
     }
 
     .vr {
-        height: 7500px;
+        height: 1575vh;
     }
 }
 
 @media(max-width: 511px) {
     .srm-ball {
-        left: 68px;
+        left: 48px;
         top: 2665px;
     }
 
@@ -641,8 +649,7 @@ a {
     }
 
     .vr {
-        height: 750vh;
-        height: 1650vh;
+        height: 2150vh  !important;
     }
 }
 
@@ -676,6 +683,16 @@ a {
     line-height: 95px;
     color: #537FE7;
 
+}
+
+.exp-ball{
+    background: #45f3ff;
+    margin-top: 90px;
+}
+
+.exp{
+    font-size: 60px;
+    color: #45f3ff;
 }
 
 .container__cards {
@@ -829,6 +846,11 @@ p {
     .container__cards {
         grid-template-columns: 1fr;
     }
+}
+
+.exp-title{
+    color:#1E1E1E;
+    background-color: #45f3ff;
 }
 
 @media(max-width: 766px) {
@@ -1035,6 +1057,11 @@ form .button input:hover {
         top: 700px;
     }
 
+    .reg-ball{
+        position: relative;
+        right: 20px;
+    }
+
     .container {
         left: 20px;
     }
@@ -1058,7 +1085,7 @@ form .button input:hover {
 /* Contact starts */
 
 #contact {
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 .contact-ball {
@@ -1167,11 +1194,11 @@ body {
     left: -10px;
 }
 
-.container .row100 .inputBox .line {
+.container .row100 .inputBox .contact-line {
     position: absolute;
     bottom: 0;
     display: block;
-    width: 100%;
+    width: 80%;
     height: 2px;
     background: #45f3ff;
     transition: 0.5s;
@@ -1179,8 +1206,8 @@ body {
     pointer-events: none;
 }
 
-.container .row100 .inputBox input:focus~.line,
-.container .row100 .inputBox input:valid~.line {
+.container .row100 .inputBox input:focus~.contact-line,
+.container .row100 .inputBox input:valid~.contact-line {
     height: 100%;
 }
 
@@ -1202,8 +1229,8 @@ body {
     left: -10px;
 }
 
-.container .row100 .inputBox textarea:focus~.line,
-.container .row100 .inputBox textarea:valid~.line {
+.container .row100 .inputBox textarea:focus~.contact-line,
+.container .row100 .inputBox textarea:valid~.contact-line {
     height: 100%;
 }
 
@@ -1221,7 +1248,7 @@ input[type="submit"] {
 @media(max-width: 511px) {
     #contact{
         position: relative;
-        top: 350px;
+        top: 1030px;
     }
 
     .contact-head{
@@ -1232,5 +1259,9 @@ input[type="submit"] {
     .container{
         position: relative;
         left: 20px;
+    }
+
+    .contact-line{
+        width: 200px;
     }
 }
