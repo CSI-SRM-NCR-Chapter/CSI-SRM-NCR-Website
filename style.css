@@ -205,6 +205,7 @@ a {
     font-weight: 400;
     font-size: 33px;
     line-height: 41px;
+    align-items: center;
     color: #78C9F9;
 }
 
@@ -253,10 +254,12 @@ a {
         top: 420px;
         left: 130px;
         font-size: 10px;
+        justify-self: center;
     }
 
     .vr {
         margin-left: 80px;
+        top: 200px;
     }
 
     .home-ball {
@@ -461,6 +464,8 @@ a {
 
     .csi-text {
         width: 200px;
+        font-size: 15px;
+        text-align: justify;
     }
 }
 
@@ -531,7 +536,7 @@ a {
 @media(max-width: 511px) {
     .cse-ball {
         left: 68px;
-        top: 2420px;
+        top: 1910px;
     }
 
     .cse-head {
@@ -541,6 +546,8 @@ a {
 
     .cse-text {
         width: 200px;
+        font-size: 15px;
+        text-align: justify;
     }
 }
 
@@ -619,7 +626,7 @@ a {
 @media(max-width: 511px) {
     .srm-ball {
         left: 68px;
-        top: 3700px;
+        top: 2665px;
     }
 
     .srm-head {
@@ -629,6 +636,8 @@ a {
 
     .srm-text {
         width: 200px;
+        font-size: 15px;
+        text-align: justify;
     }
 
     .vr {
@@ -680,6 +689,7 @@ a {
 }
 
 .card {
+    margin-top: 50px;
     position: relative;
     line-height: 0;
     width: 90%;
@@ -835,7 +845,7 @@ p {
 @media(max-width: 511px) {
     #leads {
         position: relative;
-        top: 2200px;
+        top: 590px;
     }
 
     .leads-ball {
@@ -890,10 +900,10 @@ p {
 } */
 
 :root {
-  --main-blue: #71b7e6;
-  --main-purple: #9b59b6;
-  --main-grey: #ccc;
-  --sub-grey: #d9d9d9;
+    --main-blue: #71b7e6;
+    --main-purple: #9b59b6;
+    --main-grey: #ccc;
+    --sub-grey: #d9d9d9;
 }
 
 /* body {
@@ -906,19 +916,15 @@ p {
 } */
 /* container and form */
 .container {
-  max-width: 600px;
-  width: 100%;
-  background: #fff;
-  padding: 25px 30px;
-  border-radius: 5px;
-  position: relative;
-  top: 150px;
-  left: 60px;
-}
-.container .title {
-  font-size: 25px;
-  font-weight: 500;
-  position: relative;
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: relative;
+    top: 150px;
+    left: 30px;
+    background-color: #1E1E1E;
 }
 
 /* .container .title::before {
@@ -932,78 +938,118 @@ p {
 } */
 
 .container form .user__details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    color: #5047BB;
+    font-size: 20px;
 }
+
 /* inside the form user details */
 form .user__details .input__box {
-  width: calc(100% / 2 - 20px);
-  margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
 }
 
 .user__details .input__box .details {
-  font-weight: 500;
-  margin-bottom: 5px;
-  display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
 }
+
 .user__details .input__box input {
-  height: 45px;
-  width: 100%;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid var(--main-grey);
-  padding-left: 15px;
-  font-size: 16px;
-  border-bottom-width: 2px;
-  transition: all 0.3s ease;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--main-grey);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 }
 
 .user__details .input__box input:focus,
 .user__details .input__box input:valid {
-  border-color: var(--main-purple);
+    border-color: var(--main-purple);
+}
+
+/* submit button */
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+    transition: all 0.3s ease;
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
 }
 
 @media only screen and (max-width: 584px) {
-  .container {
-    max-width: 100%;
-  }
+    .container {
+        max-width: 100%;
+    }
 
-  form .user__details .input__box {
-    margin-bottom: 15px;
-    width: 100%;
-  }
+    form .user__details .input__box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
 
-  form .gender__details .category {
-    width: 100%;
-  }
+    form .gender__details .category {
+        width: 100%;
+    }
 
-  .container form .user__details {
-    max-height: 300px;
-    overflow-y: scroll;
-  }
+    .container form .user__details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
 
-  .user__details::-webkit-scrollbar {
-    width: 0;
-  }
+    .user__details::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
-@media(max-width: 766px){
-    #register{
+@media(max-width: 766px) {
+    #register {
         position: relative;
         top: 200px;
     }
 }
 
-@media(max-width: 511px){
-    #register{
+@media(max-width: 511px) {
+    #register {
         position: relative;
-        top: 2300px;
+        top: 700px;
     }
 
-    .reg-head{
+    .container {
+        left: 20px;
+    }
+
+    .reg-head {
+        left: 60px;
         font-size: 50px;
+    }
+
+    .container {
+        height: 25px;
+    }
+
+    .user__details{
+        height: 20000px;
     }
 }
 
@@ -1011,7 +1057,7 @@ form .user__details .input__box {
 
 /* Contact starts */
 
-#contact{
+#contact {
     margin-top: 250px;
 }
 
@@ -1036,4 +1082,155 @@ form .user__details .input__box {
     position: relative;
     left: 80px;
     bottom: 35px;
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display-swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-sarif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #03080a;
+} */
+
+.container {
+    width: 80%;
+    padding: 20px;
+}
+
+.container h2 {
+    width: 100%;
+    color: #45f3ff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container .row100 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #45f3ff;
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus+.text,
+.container .row100 .inputBox input:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus~.line,
+.container .row100 .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.container .row100 .inputBox textarea:focus+.text,
+.container .row100 .inputBox textarea:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus~.line,
+.container .row100 .inputBox textarea:valid~.line {
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+@media(max-width: 511px) {
+    #contact{
+        position: relative;
+        top: 350px;
+    }
+
+    .contact-head{
+        left: 60px;
+        font-size: 50px;
+    }
+
+    .container{
+        position: relative;
+        left: 20px;
+    }
 }
