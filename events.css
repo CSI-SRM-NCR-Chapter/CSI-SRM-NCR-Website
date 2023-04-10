@@ -10,6 +10,11 @@
   --card-bg: #3A3838;
 }
 
+body {
+  font-family: Roboto;
+}
+
+
 
 @media (min-width: 1000px) {
   #timeline .demo-card:nth-child(odd) .head::after, #timeline .demo-card:nth-child(even) .head::after {
