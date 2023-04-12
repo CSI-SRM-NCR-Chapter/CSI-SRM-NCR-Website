@@ -22,13 +22,16 @@
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- Animation on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- Navbar -->
 
-    <div class="nav">
+    <!-- <div class="nav">
 
         <div class="logo">
             <img src="Assets/srm-logo.webp" alt="srm-logo">
@@ -48,7 +51,31 @@
                 <div class="line" id="line2"></div>
             </span>
         </div>
-    </div>
+    </div> -->
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="Assets/srm-logo.webpq" alt="srm-logo" class="srm-logo">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="//github.io/jo_geek" target="_blank">.about( )</a>
+          <a href="http://stackoverflow.com/users/4084003/" target="_blank">.leads( )</a>
+          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">.events( )</a>
+          <a href="https://codepen.io/jo_Geek/" target="_blank">.register( )</a>
+          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">.contact( )</a>
+        </div>
+      </div>
 
 
     <!-- Home -->
@@ -72,12 +99,12 @@
         <!-- About -->
 
         <div id="about">
-            <div class="about-ball about-circles">
+            <div class="about-ball about-circles" data-aos="fade-right" data-aos-duration="2000">
                 <p class="about-head" id="about-head">about( )</p>
             </div>
             <div>
                 <div class="about-subhead">
-                    <div class="csi-ball about-circles">
+                    <div class="csi-ball about-circles" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1300">
                         <div class="csi-section">
                             <p class="csi-head">csi( )</p>
                             <p class="csi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
@@ -92,7 +119,7 @@
                         </div>
                     </div>
 
-                    <div class="cse-ball about-circles">
+                    <div class="cse-ball about-circles" data-aos="fade-right" data-aos-duration="2000">
                         <div class="cse-section">
                             <p class="cse-head">cse_department( )</p>
                             <p class="cse-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
@@ -107,7 +134,7 @@
                         </div>
                     </div>
 
-                    <div class="srm-ball about-circles">
+                    <div class="srm-ball about-circles" data-aos="fade-right" data-aos-duration="2000">
                         <div class="srm-section">
                             <p class="srm-head">srm( )</p>
                             <p class="srm-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
@@ -127,11 +154,11 @@
 
         <!-- Leads -->
         <div id="leads">
-            <div class="leads-ball circle">
+            <div class="leads-ball circle" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">leads( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -150,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -169,7 +196,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="1000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -188,7 +215,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="1500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -209,11 +236,11 @@
             </div>
 
             <!-- Technical -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">technical( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -232,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -253,7 +280,7 @@
             </div>
 
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -272,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -290,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="1000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -312,11 +339,11 @@
             </div>
 
             <!-- Management -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">management( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -335,7 +362,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -357,11 +384,11 @@
             </div>
 
             <!-- Creative -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">creative( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -380,7 +407,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -402,11 +429,11 @@
             </div>
 
             <!-- Social Media -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">social_media( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -425,7 +452,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -446,11 +473,11 @@
             </div>
 
             <!-- Content  -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">content( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -469,7 +496,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -491,11 +518,11 @@
             </div>
 
             <!-- Publicity/PR  -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">publicity/pr( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -514,7 +541,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -528,18 +555,19 @@
                                     class="ri-mail-line"></i></a>
                             <a class="card__link" href="https://www.instagram.com/"><i
                                     class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>                        </div>
+                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
             <!-- Photography -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">photography( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -558,7 +586,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <img class="card__image" src="Assets/leads.enc" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -580,11 +608,11 @@
             </div>
 
             <!-- Treasurer -->
-            <div class="leads-ball">
+            <div class="leads-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head">treasurer( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-down" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -605,11 +633,11 @@
             </div>
 
             <!-- Exceptional Member -->
-            <div class="leads-ball exp-ball">
+            <div class="leads-ball exp-ball" data-aos="fade-right" data-aos-duration="2000">
                 <p class="leads-head exp">exceptional_member( )</p>
             </div>
             <div class="container__cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-out-up" data-aos-duration="2000">
                     <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
                     <h3 class="card__title exp-title">.president( )<br>Samriddha Basu</h3>
                     <div class="card__information">
@@ -639,11 +667,11 @@
 
         <!-- Registration Form -->
         <div id="register">
-            <div class="reg-ball">
+            <div class="reg-ball" data-aos="fade-right" data-aos-duration="2000">
                 <div class="reg-head">register( )</div>
             </div>
             <div class="form">
-                <div class="container">
+                <div class="container" data-aos="fade-up" data-aos-duration="2000">
                     <form action="#">
                         <div class="user__details">
                             <div class="input__box">
@@ -691,10 +719,10 @@
 
         <!-- Contact Us -->
         <div id="contact">
-            <div class="contact-ball">
+            <div class="contact-ball" data-aos="fade-right" data-aos-duration="2000">
                 <div class="contact-head">contact( )</div>
             </div>
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="2000">
                 <div class="row100">
                     <div class="col">
                         <div class="inputBox">
@@ -747,6 +775,13 @@
 
         <!-- Javascript -->
         <script src="script.js"></script>
+
+        <!-- Animation on scroll -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
