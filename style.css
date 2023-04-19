@@ -809,7 +809,7 @@ body {
     position: relative;
     left: 80px;
     bottom: 30px;
-    width: 700px;
+    width: 250px;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -1020,7 +1020,7 @@ p {
     .leads-head {
         font-size: 30px;
         left: 55px;
-        width: 260px;
+        width: 250px;
     }
 
     .card {
