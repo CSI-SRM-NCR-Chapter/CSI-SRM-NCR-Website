@@ -135,9 +135,8 @@ body {
 .nav {
     height: 50px;
     width: 100%;
-    /* background-color: #4d4d4d; */
     position: relative;
-    opacity: 1;
+    opacity: 5;
 }
 
 .srm-logo {
@@ -186,7 +185,7 @@ body {
     opacity: 2;
 }
 
-@media (max-width:600px) {
+@media (max-width:897px) {
     .nav>.nav-btn {
         display: inline-block;
         position: absolute;
@@ -219,7 +218,6 @@ body {
         display: block;
         width: 100%;
         background-color: #1E1E1E;
-        /* background-color: #333; */
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -474,7 +472,7 @@ body {
 /* About page  */
 
 #about {
-    margin-top: 100px !important;
+    margin-top: 300px !important;
     height: 2055px !important;
 }
 
@@ -516,6 +514,7 @@ body {
 
     .about-head {
         font-size: 50px;
+        width: 200px;
         top: -125px;
     }
 }
@@ -548,7 +547,7 @@ body {
 .csi-text {
     /* position: absolute; */
     width: 1191px;
-    height: 288px;
+    /* height: 288px; */
     /* left: 153px;
     top: 1435px; */
     position: absolute;
@@ -598,14 +597,14 @@ body {
     width: 28.73px;
     height: 28.73px;
     left: 106px;
-    top: 1800px;
+    top: 2000px;
 
     background: #78C9F9;
     border-radius: 50%;
 }
 
 .cse-head {
-    width: 600px !important;
+    width: 600px  !important;
     position: absolute;
     left: 50px;
     top: -100px;
@@ -621,7 +620,7 @@ body {
 .cse-text {
     /* position: absolute; */
     width: 1191px;
-    height: 288px;
+    /* height: 288px; */
     /* left: 153px;
     top: 1435px; */
     position: absolute;
@@ -637,14 +636,21 @@ body {
 }
 
 @media(max-width:1156px) {
+    .cse-ball{
+        position: relative;
+        top: 1535px;
+        left: -15px;
+    }
     .cse-text {
         width: 700px;
     }
 }
 
 @media(max-width: 766px) {
-    .cse-ball {
-        top: 1885px;
+    .cse-ball{
+        position: relative;
+        top: 1700px  !important;
+        left: -15px;
     }
 
     .cse-section {
@@ -659,13 +665,14 @@ body {
 
 @media(max-width: 511px) {
     .cse-ball {
-        left: 48px;
-        top: 1910px;
+        left: -15px;
+        top: 2265px !important;
     }
 
     .cse-head {
         font-size: 30px;
         top: -95px;
+        width: 270px  !important;
     }
 
     .cse-text {
@@ -680,7 +687,7 @@ body {
     width: 28.73px;
     height: 28.73px;
     left: 106px;
-    top: 2300px;
+    top: 2430px;
 
     background: #78C9F9;
     border-radius: 50%;
@@ -703,7 +710,7 @@ body {
 .srm-text {
     /* position: absolute; */
     width: 1191px;
-    height: 288px;
+    /* height: 288px; */
     /* left: 153px;
     top: 1435px; */
     position: absolute;
@@ -718,7 +725,16 @@ body {
     color: #FFFFFF;
 }
 
-@media only screen and(max-width:1156px) and (min-width: 765px) {
+@media(max-width:1156px){
+    .srm-ball{
+        top: 3085px;
+    }
+    .srm-text{
+        width: 700px;
+    }
+}
+
+/* @media only screen and(max-width:1156px) and (min-width: 765px) {
     .srm-text {
         width: 700px;
     }
@@ -726,11 +742,11 @@ body {
     .vr {
         height: 1156vh;
     }
-}
+} */
 
 @media(max-width: 766px) {
     .srm-ball {
-        top: 2495px;
+        top: 3230px;
     }
 
     .srm-section {
@@ -750,7 +766,7 @@ body {
 @media(max-width: 511px) {
     .srm-ball {
         left: 48px;
-        top: 2665px;
+        top: 4000px;
     }
 
     .srm-head {
@@ -774,6 +790,8 @@ body {
 /* Leads page  */
 
 #leads {
+    /* position: relative;
+    top: 1425px; */
     padding-top: 150px;
 }
 
@@ -969,10 +987,17 @@ p {
     background-color: #45f3ff;
 }
 
+@media(max-width: 1156px){
+    #leads{
+        position: relative;
+        top: 1130px;
+    }
+}
+
 @media(max-width: 766px) {
     #leads {
         position: relative;
-        top: 200px;
+        top: 1420px;
     }
 
     .leads-head {
@@ -983,7 +1008,7 @@ p {
 @media(max-width: 511px) {
     #leads {
         position: relative;
-        top: 590px;
+        top: 2920px;
     }
 
     .leads-ball {
@@ -995,17 +1020,27 @@ p {
     .leads-head {
         font-size: 30px;
         left: 55px;
+        width: 260px;
     }
 
     .card {
         position: relative;
         left: -20px;
     }
+
+    .exp{
+        font-size: 23px;
+    }
 }
 
 /* Leads End  */
 
 /* Registration */
+
+/* #register{
+    position: relative;
+    top: 1425px;
+} */
 
 .reg-ball {
     width: 36px;
@@ -1162,15 +1197,15 @@ form .button input:hover {
 
 @media(max-width: 766px) {
     #register {
-        position: relative;
-        top: 200px;
+        position: relative !important;
+        top: 1350px !important;
     }
 }
 
 @media(max-width: 511px) {
     #register {
         position: relative;
-        top: 700px;
+        top: 2850px !important;
     }
 
     .reg-ball {
@@ -1185,6 +1220,7 @@ form .button input:hover {
     .reg-head {
         left: 60px;
         font-size: 50px;
+        width: 245px;
     }
 
     .container {
@@ -1196,12 +1232,20 @@ form .button input:hover {
     }
 }
 
+@media(max-width: 1156px){
+    #register{
+        position: relative;
+        top: 1080px;
+    }
+}
 /* Registration End  */
 
 /* Contact starts */
 
 #contact {
     margin-top: 300px;
+    /* position: relative;
+    top: 1280px; */
 }
 
 .contact-ball {
@@ -1264,7 +1308,7 @@ body {
 
 .container .row100 .col {
     position: relative;
-    width: 100%;
+    width: 69%;
     padding: 0 10px;
     margin: 30px 0 10px;
     transition: 0.5s;
@@ -1281,6 +1325,7 @@ body {
 .container .row100 .inputBox.textarea textarea {
     position: absolute;
     width: 100%;
+    /* width: 65%; */
     height: 100%;
     background: transparent;
     box-shadow: none;
@@ -1361,15 +1406,30 @@ input[type="submit"] {
     border-radius: 2px;
 }
 
+@media(max-width: 1156px){
+    #contact{
+        position: relative;
+        top: 900px;
+    }
+}
+
+@media(max-width: 766px){
+    #contact{
+        position: relative;
+        top: 1225px;
+    }
+}
+
 @media(max-width: 511px) {
     #contact {
         position: relative;
-        top: 1030px;
+        top: 3090px;
     }
 
     .contact-head {
         left: 60px;
         font-size: 50px;
+        width: 255px;
     }
 
     .container {
