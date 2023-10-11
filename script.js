@@ -40,3 +40,28 @@ cards.forEach(el => {
       setTimeout(() => eleInfo.classList.toggle('card__information--collapse'), 270);
   });
 });
+
+// Forms 
+function submitForm(formId) {
+  const form = document.getElementById(formId);
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+    });
+  });
+}
+
+window.addEventListener("load", function () {
+  submitForm('register-form');
+  submitForm('contact-form');
+});
