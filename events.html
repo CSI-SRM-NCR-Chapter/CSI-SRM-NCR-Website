@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/events.css">
+    <link rel="stylesheet" href="events.css">
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/Assets/csi-logo-300x300.ico">
@@ -17,12 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&family=Staatliches&display=swap"
         rel="stylesheet">
 
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="nav">
+    <!-- <div class="nav">
 
         <div class="logo">
             <img height="20" width="20" src="Assets/srm-logo.webp" alt="srm-logo">
@@ -42,81 +47,106 @@
                 <div class="line" id="line2"></div>
             </span>
         </div>
+    </div> -->
+
+    <div class="flex p-30 justify-between uppercase">
+        <div class="ml-10 md:mx-20 mt-3">
+            <img class="srm-logo w-10" src="Assets/srm-logo.webp" alt="SRMIST">
+        </div>
+        <div class="mt-5 cursor-pointer items-center" id="burger">
+            <svg class="md:hidden mr-10 mt-2 w-6 text-white text-center" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <ul class="staatliches md:flex leading-10 text-center text-sm md:text-xl md:mr-20 hidden md:block mr-10 text-white"
+                id="menu">
+                <li class="mx-3 mt-15 hover:text-gray-300"><a href="index.html">.home( )</a></li>
+                <li class="mx-3 mt-15 hover:text-gray-300"><a href="index.html#about">.about( )</a></li>
+                <li class="mx-3 mt-15 hover:text-gray-300"><a href="index.html#leads">.leads( )</a></li>
+                <li class="mx-3 mt-15 hover:text-gray-300"><a href="events.html">.events( )</a></li>
+                <li class="mx-3 mt-15 hover:text-gray-300"><a href="index.html#register">.register( )</a></li>
+                <li class="mx-3 mt-15 hover:text-gray-300"><a href="index.html#contact">.contact( )</a></li>
+            </ul>
+        </div>
     </div>
 
 
+    <div>
 
+        <section id=timeline>
+            <h1>Our Events</h1>
+            <div class="demo-card-wrapper">
+                <div class="demo-card demo-card--step1 mb-96">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>25/10/23</span>
+                        </div>
+                        <h2><span class="small">Creative</span> Shutterverse</h2>
+                    </div>
+                    <div class="body">
+                        <p>Through the Lens of Creativity: Shutterverse, Where Every Click Tells a Story.</p>
+                        <img src="Assets/Events/Shutterverse.jpeg" width="1000" height="500" alt="Graphic">
+                    </div>
+                </div>
 
-    <section id=timeline>
-        <h1>Our Events</h1>
-        <p class="leader">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-        <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1">
-                <div class="head">
-                    <div class="number-box">
-                        <span>01</span>
+                <div class="demo-card demo-card--step2">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>02/10/23</span>
+                        </div>
+                        <h2><span class="small">Educational</span> Research Paper Design</h2>
                     </div>
-                    <h2><span class="small">Subtitle</span> Technology</h2>
-                </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="https://placehold.it/1000x500" alt="Graphic">
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step2">
-                <div class="head">
-                    <div class="number-box">
-                        <span>02</span>
+                    <div class="body">
+                        <p>Designing Discovery: Unleashing the Power of Research Excellence.</p>
+                        <img src="Assets/Events/ResearchWebinar.jpeg" alt="Graphic">
                     </div>
-                    <h2><span class="small">Subtitle</span> Confidence</h2>
                 </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="https://placehold.it/1000x500" alt="Graphic">
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step3">
-                <div class="head">
-                    <div class="number-box">
-                        <span>03</span>
+
+                <div class="demo-card demo-card--step3">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>22/09/23</span>
+                        </div>
+                        <h2><span class="small">Technical</span> Codeclash 2.0/Err-Hunt</h2>
                     </div>
-                    <h2><span class="small">Subtitle</span> Adaptation</h2>
-                </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="https://placehold.it/1000x500" alt="Graphic">
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step4">
-                <div class="head">
-                    <div class="number-box">
-                        <span>04</span>
+                    <div class="body">
+                        <p>Unleash the Code Warrior in You: Conquer Challenges, Debug Defeats!</p>
+                        <img src="Assets/Events/Codeclash2.0.jpeg" alt="Graphic">
                     </div>
-                    <h2><span class="small">Subtitle</span> Consistency</h2>
                 </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="https://placehold.it/1000x500" alt="Graphic">
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step5">
-                <div class="head">
-                    <div class="number-box">
-                        <span>05</span>
+
+                <div class="demo-card demo-card--step4">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>27/02/23</span>
+                        </div>
+                        <h2><span class="small">Technical</span> WebMinds</h2>
                     </div>
-                    <h2><span class="small">Subtitle</span> Conversion</h2>
+                    <div class="body">
+                        <p>Crafting Tomorrow's Digital Frontiers: Web Dev Contest, Where Ideas Code the Future!</p>
+                        <img src="Assets/Events/WebMinds.jpeg" alt="Graphic">
+                    </div>
                 </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="https://placehold.it/1000x500" alt="Graphic">
-                </div>
+
+                <!-- <div class="demo-card demo-card--step5">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>22/03/23</span>
+                        </div>
+                        <h2><span class="small">Technical</span> 100 Days of Code</h2>
+                    </div>
+                    <div class="body">
+                        <p>Elevate Your Craft, Day by Day: Embrace the Challenge of 100 Days of Code!</p>
+                        <img src="Assets/Events/100DaysOfCode.jpeg" alt="Graphic">
+                    </div>
+                </div> -->
+
             </div>
-        
-        </div>
-    </section>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

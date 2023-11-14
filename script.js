@@ -1,36 +1,21 @@
-// let nav=false;
+// NavBar
+const burger = document.querySelector("#burger");
+const menu = document.querySelector("#menu");
 
-// const handleClick=()=>{
-//     const menuLinks=document.querySelector(".menu-links");
-//     const line1=document.querySelector("#line1");
-//     const line2=document.querySelector("#line2");
-//     const background=document.querySelector(".background");
-//     const home= document.querySelector("#home");
+burger.addEventListener('click', function () {
+  if (menu.classList.contains('hidden')) {
+    menu.classList.remove('hidden');
+  }
+  else {
+    menu.classList.add('hidden');
+  }
+})
 
-//     if(nav){
-//         menuLinks.style.cssText="left: 70%; transition: all 0.5s;";
-//         line1.style.cssText="transform: rotate(0deg);";      //Rotating lines to original position      
-//         line2.style.cssText="transform: rotate(0deg);";      //Rotating lines to original position
-//         background.style.cssText="transform: scale(0); opacity:100%;";
-//         home.style.cssText="opacity: 100%;"
-//         nav=!nav;
-//     }
-//     else{
-//         menuLinks.style.cssText="left: 0; transition: all 0.5s;";
-//         line1.style.cssText="transform: rotate(45deg);";               //Rotating lines form a X
-//         line2.style.cssText="transform: rotate(135deg); margin-top: -7px;";               //Rotating lines form a X
-//         background.style.cssText="transform: scale(50);";
-//         home.style.cssText="opacity: 0%;"
-//         nav=!nav;
-//     }
-// };
-
-// Leads
-
+// Leads 
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(el => {
-  el.addEventListener('click', () => {
+  el.addEventListener('mouseenter', () => {
     const eleInfo = el.querySelector('.card__information');
     el.classList.toggle('card--active');
 
@@ -41,23 +26,80 @@ cards.forEach(el => {
   });
 });
 
-// Forms 
+// Form Submission 
+// function submitForm(formId) {
+//   const form = document.getElementById(formId);
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     const data = new FormData(form);
+//     const action = e.target.action;
+//     fetch(action, {
+//       method: 'POST',
+//       body: data,
+//     })
+//       .then(() => {
+//         // alert("Success!");
+//         // Display the success popup
+//         // const successPopup = document.getElementById('successPopup');
+//         // successPopup.style.display = 'block';
+
+//         // // Hide the popup after a delay (e.g., 3 seconds)
+//         // setTimeout(() => {
+//         //     successPopup.style.display = 'none';
+//         // }, 3000);
+
+//         const successPopup = document.getElementById('successPopup');
+//         successPopup.style.display = 'flex'; // Use 'flex' to center content vertically
+//         setTimeout(() => {
+//           successPopup.style.display = 'none';
+//         }, 5000);
+//       })
+//       .catch(error => {
+//         console.error('Error!', error.message);
+//       });
+//   });
+// }
+
+// window.addEventListener("load", function () {
+//   submitForm('register-form');
+//   submitForm('contact-form');
+// });
+
+
 function submitForm(formId) {
   const form = document.getElementById(formId);
+  const loadingSpinner = document.getElementById('loadingSpinner');
+
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      alert("Success!");
-    })
-    .catch(error => {
-      console.error('Error!', error.message);
-    });
+      e.preventDefault();
+      loadingSpinner.classList.remove('hidden'); // Show the loading spinner
+
+      const data = new FormData(form);
+      const action = e.target.action;
+
+      fetch(action, {
+          method: 'POST',
+          body: data,
+      })
+      .then(() => {
+          // Hide the loading spinner
+          loadingSpinner.classList.add('hidden');
+
+          // Display the success popup
+          const successPopup = document.getElementById('successPopup');
+          successPopup.style.display = 'flex'; // Use 'flex' to center content vertically
+
+          // Hide the popup after a delay (e.g., 5 seconds)
+          setTimeout(() => {
+              successPopup.style.display = 'none';
+          }, 5000);
+      })
+      .catch(error => {
+          console.error('Error!', error.message);
+
+          // Hide the loading spinner on error
+          loadingSpinner.classList.add('hidden');
+      });
   });
 }
 
