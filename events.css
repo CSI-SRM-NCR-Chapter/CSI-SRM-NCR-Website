@@ -106,6 +106,7 @@ body {
 #timeline .demo-card {
   position: relative;
   display: block;
+  /* margin: 10px auto; */
   margin: 10px auto 80px;
   max-width: 94%;
   z-index: 2;
@@ -127,7 +128,7 @@ body {
     height: 400px;
     margin: 90px;
     margin-top: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 100px;
  }
   #timeline .demo-card:nth-child(odd) {
     margin-right: 45px;
@@ -174,7 +175,7 @@ body {
 }
 #timeline .demo-card .head h2 {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   font-weight: inherit;
   letter-spacing: 2px;
   margin: 0;
@@ -183,7 +184,7 @@ body {
 }
 @media (min-width: 480px) {
   #timeline .demo-card .head h2 {
-    font-size: 165%;
+    font-size: 125%;
     line-height: 1.2rem;
  }
 }
@@ -205,7 +206,8 @@ body {
 }
 @media (min-width: 1000px) {
   #timeline .demo-card .body {
-    height: 315px;
+    height: 500px;
+    /* height: 315px; */
  }
 }
 #timeline .demo-card .body p {
@@ -215,7 +217,11 @@ body {
 }
 #timeline .demo-card .body img {
   display: block;
-  width: 100%;
+  width: 1000px;
+  height: auto;
+  /* height: 500px; */
+  max-width: 100%; /* Ensure the image doesn't exceed the specified width */
+  max-height:80%;
 }
 #timeline .demo-card--step1 {
   background-color: #46b8e9;
@@ -247,3 +253,12 @@ body {
 #timeline .demo-card--step5 .head::after {
   border-color: #46b8e9;
 }
+
+#timeline .demo-card--step1,
+#timeline .demo-card--step2,
+#timeline .demo-card--step3,
+#timeline .demo-card--step4,
+#timeline .demo-card--step5 {
+    margin-bottom: 150px; /* Adjust the margin-bottom value as needed */
+}
+

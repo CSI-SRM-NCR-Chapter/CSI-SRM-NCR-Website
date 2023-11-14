@@ -3,809 +3,1160 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Society of India SRM NCR</title>
+    <title>Computer Society of India</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- favicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/Assets/csi-logo-300x300.ico">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&family=Staatliches&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Staatliches&family=Ubuntu&display=swap"
         rel="stylesheet">
 
-    <!-- Remix Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Animation on Scroll -->
+    <!-- Animate on Scoll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body>
+<body class="text-white">
+    <div>
 
-    <!-- Navbar -->
-
-    <!-- <div class="nav">
-
-        <div class="logo">
-            <img src="Assets/srm-logo.webp" alt="srm-logo">
-        </div>
-
-        <div class="menu">
-            <ul class="menu-links">
-                <a href="#about">.about( )</a>
-                <a href="#leads">.leads( )</a>
-                <a href="/events.html">.events( )</a>
-                <a href="#register">.register( )</a>
-                <a href="#contact">.contact( )</a>
-            </ul>
-            <div class="background"></div>
-            <span class="open" onclick="handleClick()">
-                <div class="line" id="line1"></div>
-                <div class="line" id="line2"></div>
-            </span>
-        </div>
-    </div> -->
-
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-            <div class="nav-title">
-                <img src="Assets/srm-logo.webp" alt="srm-logo" class="srm-logo">
+        <!-- Navbar -->
+        <div class="flex p-30 justify-between">
+            <div class="ml-10 md:mx-20 mt-3">
+                <img class="srm-logo w-10" src="Assets/srm-logo.webp" alt="SRMIST">
             </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-
-        <div class="nav-links">
-            <a href="#about">.about( )</a>
-            <a href="#leads">.leads( )</a>
-            <a href="events.html" target="_blank">.events( )</a>
-            <a href="#register">.register( )</a>
-            <a href="#contact">.contact( )</a>
-        </div>
-    </div>
-
-
-    <!-- Home -->
-
-    <div class="vr">
-        <div id="home">
-            <div class="home-ball circle"></div>
-            <div class="view">
-                <div class="titles">
-                    <p class="head1">COMPUTER</p>
-                    <p class="head2">SOCIETY</p>
-                    <p class="head3">OF INDIA</p>
-                    <p class="head4">SRMIST DELHI-NCR CAMPUS</p>
-                    <div class="csi">
-                        <img src="Assets/csi-logo-300x300.png" alt="csi-logo" class="csi-logo">
-                    </div>
-                </div>
+            <div class="mt-5 cursor-pointer items-center" id="burger">
+                <svg class="md:hidden mr-10 mt-2 w-6 text-white text-center" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <ul class="md:flex leading-10 text-center text-sm md:text-xl md:mr-20 hidden md:block mr-10 text-white lowercase"
+                    id="menu">
+                    <li class="mx-3 mt-15 hover:text-gray-300"><a href="#about" class="lowercase">.about( )</a></li>
+                    <li class="mx-3 mt-15 hover:text-gray-300"><a href="#leads">.leads( )</a></li>
+                    <li class="mx-3 mt-15 hover:text-gray-300"><a href="events.html">.events( )</a></li>
+                    <li class="mx-3 mt-15 hover:text-gray-300"><a href="#register">.register( )</a></li>
+                    <li class="mx-3 mt-15 hover:text-gray-300"><a href="#contact">.contact( )</a></li>
+                </ul>
             </div>
         </div>
 
-        <!-- About -->
+        <!-- Vertical Rule -->
+        <div class="mt-48">
 
-        <div id="about">
-            <div class="about-ball about-circles" data-aos="fade-right" data-aos-duration="1000">
-                <p class="about-head" id="about-head">about( )</p>
-            </div>
-            <div>
-                <div class="about-subhead">
-                    <div class="csi-ball about-circles" data-aos="fade-right" data-aos-duration="1000"
-                        data-aos-delay="500">
-                        <div class="csi-section">
-                            <p class="csi-head">csi( )</p>
-                            <p class="csi-text">Computer Society of India is a body of computer professionals in India.
-                                It was started
-                                on 6 March 1965 by a few computer professionals and has now grown to be the national
-                                body representing computer professionals. It has 72 chapters across India, 511 student
-                                branches, and 100,000 members.
-                                The Computer Society of India is a non-profit professional meet to exchange views
-                                and information to learn and share ideas. The Society also encourages and assists
-                                professionalsto maintain integrity and competence of the profession and fosters a sense
-                                of partnership amongst members. Besides the activities held at the Chapters and
-                                Student Branches, the Society also conducts periodic conferences and seminars. The
-                                Society functions under the guidance of an Executive Committee. The Functional head
-                                of the Society is the President and is assisted by the Vice President, Executive,
-                                Co-executive and other teams.
-                                CSI aims to advance and promote the science and practice of computing and IT in
-                                India, as well as to facilitate communication and collaboration among its members. It
-                                provides a platform for professionals, researchers, educators, and studentsto share
-                                their
-                                knowledge, experiences, and ideas through conferences, seminars, and workshops.
+            <main class="ml-12 md:mx-20 border-l-4 pb-24">
+                <div class="circle relative bottom-1 right-5 md:right-6 dark-blue-bg w-10 h-10 md:w-12 md:h-12"></div>
+                <!-- Home -->
+                <div class="relative bottom-48 md:flex justify-between items-center mt-20">
+                    <div>
+                        <div class="ubuntu md:mt-14 ml-10 mb-5">
+                            <p class="leading-tight uppercase md:text-7xl text-3xl mb-0">Computer</p>
+                            <p class="blue leading-tight uppercase md:text-8xl text-4xl mb-0">Society</p>
+                            <p class="leading-tight uppercase md:text-8xl text-4xl mb-0">Of India</p>
+                            <p class="blue leading-tight uppercase md:text-xl text-base">SRMIST Delhi-NCR Campus
                             </p>
                         </div>
                     </div>
-
-                    <div class="cse-ball about-circles" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="cse-section">
-                            <p class="cse-head">cse_department( )</p>
-                            <p class="cse-text">The CSE Department of SRMIST, NCR provides an outstanding research
-                                environment
-                                complemented by excellence in teaching. They provide a lot of opportunities for their
-                                students, like they organize many workshops, webinars etc. The training imparted aims
-                                to prepare young minds for the challenging opportunities in the IT industry. The
-                                teachers in SRM provide practical knowledge that makes the students suitable for IT
-                                sector jobs. The CSE department in SRM also manages to welcome many big
-                                companies for the students so that they get placed in a good company and their future
-                                is secured.</p>
-                        </div>
-                    </div>
-
-                    <div class="srm-ball about-circles" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="srm-section">
-                            <p class="srm-head">srm( )</p>
-                            <p class="srm-text">SRM Institute of Science and Technology, Ghaziabad was established in
-                                the year 1997
-                                and houses over 5,000 students, over 200 faculties, and a plethora of visiting faculty
-                                from across industries. It is a private university located in Ghaziabad, Uttar Pradesh,
-                                India. The university offers undergraduate, postgraduate, and doctoral programs in
-                                various fields such as engineering, management, computer applications, pharmacy and
-                                sciences.
-                                The Ghaziabad campus of SRM Institute of Science and Technology is spread over an
-                                area of 25 acres and is equipped with modern infrastructure, including state-of-the-art
-                                laboratories, libraries, and classrooms. The campus has a vibrant student community,
-                                with students from all over the country and the world. SRM Institute of Science and
-                                Technology, Ghaziabad campus also has collaborations with several international
-                                universities, which allows students to gain a global perspective on their education. The
-                                university also provides various facilities to its students, including sports
-                                facilities,
-                                accommodation, and medical facilities.
-                                Overall, SRM Institute of Science and Technology, Ghaziabad campus is a reputed
-                                institution known for its quality education and excellent infrastructure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Leads -->
-        <div id="leads">
-            <div class="leads-ball circle" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">leads( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
+                    <div class="mr-20 ml-14">
+                        <img class="w-40 md:w-64" src="Assets/csi-logo-300x300.png" alt="">
                     </div>
                 </div>
 
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
+                <!-- About  -->
+                <div id="about" class=" mx-10 mt-60">
+
+                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                        class="circle w-8 h-8 relative right-14 top-28 md:top-32 white-bg"></div>
+                    <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                        <h2 class="rubik md:text-5xl text-3xl">.about( )</h2>
                     </div>
-                </div>
 
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="400">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
+                    <div>
 
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="my-5">
 
-            <!-- Technical -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">technical( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                                class="circle blue-bg w-7 h-7 relative right-14 top-9"></div>
 
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="400">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Management -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">management( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Creative -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">creative( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Social Media -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">social_media( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Content  -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">content( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Publicity/PR  -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">publicity/pr( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Photography -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">photography( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="card__image" src="Assets/leads.enc" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Treasurer -->
-            <div class="leads-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head">treasurer( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Exceptional Member -->
-            <div class="leads-ball exp-ball" data-aos="fade-right" data-aos-duration="1000">
-                <p class="leads-head exp">exceptional_member( )</p>
-            </div>
-            <div class="container__cards">
-                <div class="card" data-aos="zoom-out-up" data-aos-duration="1000">
-                    <img class="card__image" src="Assets/SamriddhaBasu.webp" alt="Lead" />
-                    <h3 class="card__title exp-title">.president( )<br>Samriddha Basu</h3>
-                    <div class="card__information">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae mollitia
-                            consectetur
-                            voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
-                        </p>
-                        <div class="socials">
-                            <a class="card__link" href="https://mail.google.com/mail/u/0"><i
-                                    class="ri-mail-line"></i></a>
-                            <a class="card__link" href="https://www.instagram.com/"><i
-                                    class="ri-instagram-line"></i></a>
-                            <a class="card__link" href="https://github.com/"><i class="ri-github-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-
-        <!-- Exceptional Members -->
-
-        <!-- Events -->
-
-        <!-- Registration Form -->
-        <div id="register">
-            <div class="reg-ball" data-aos="fade-right" data-aos-duration="1000">
-                <div class="reg-head">register( )</div>
-            </div>
-            <div class="form">
-                <div class="container" data-aos="fade-up" data-aos-duration="1000">
-                    <form
-                        action="https://script.google.com/macros/s/AKfycbyJmp5txHhx9ZFLAA4raJJk8vDjX5oILHjczepK9rS-TI7r3ZShjFyd8aA_d1XWZkNN/exec"
-                        id="register-form" method="post">
-                        <div class="user__details">
-                            <div class="input__box">
-                                <span class="details">.first_name( )</span>
-                                <input name="FirstName" type="text" placeholder="John" required>
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                                class="mb-5">
+                                <h4 class="rubik md:text-3xl blue text-2xl font-semibold">csi( )</h4>
                             </div>
-                            <div class="input__box">
-                                <span class="details">.last_name( )</span>
-                                <input name="LastName" type="text" placeholder="Smith" required>
+
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                                <p class="rubik uppercase text-justify md:text-left text-sm">Computer Society of India
+                                    is a
+                                    body of computer professionals in India.
+                                    It was started
+                                    on 6 March 1965 by a few computer professionals and has now grown to be the national
+                                    body representing computer professionals. It has 72 chapters across India, 511
+                                    student
+                                    branches, and 100,000 members.
+                                    The Computer Society of India is a non-profit professional meet to exchange views
+                                    and information to learn and share ideas. The Society also encourages and assists
+                                    professionalsto maintain integrity and competence of the profession and fosters a
+                                    sense
+                                    of partnership amongst members. Besides the activities held at the Chapters and
+                                    Student Branches, the Society also conducts periodic conferences and seminars. The
+                                    Society functions under the guidance of an Executive Committee. The Functional head
+                                    of the Society is the President and is assisted by the Vice President, Executive,
+                                    Co-executive and other teams.
+                                    CSI aims to advance and promote the science and practice of computing and IT in
+                                    India, as well as to facilitate communication and collaboration among its members.
+                                    It
+                                    provides a platform for professionals, researchers, educators, and studentsto share
+                                    their
+                                    knowledge, experiences, and ideas through conferences, seminars, and workshops.</p>
                             </div>
-                            <div class="input__box">
-                                <span class="details">.email( )</span>
-                                <input name="Email" type="email" placeholder="johnsmith@hotmail.com" required>
+
+                        </div>
+
+                        <div class="my-5">
+
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                                class="circle blue-bg w-7 h-7 relative right-14 top-14"></div>
+
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                                class="my-5">
+                                <h4 class="rubik md:text-3xl blue text-xl font-semibold">cse_department( )</h4>
                             </div>
-                            <div class="input__box">
-                                <span class="details">.registration_number( )</span>
-                                <input name="RegNo" type="number" maxlength="17" pattern="[A-Z]{2}\d{15}"
-                                    placeholder="RA2111003030001" required>
+
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                                <p class="rubik uppercase text-justify md:text-left text-sm">The CSE Department of
+                                    SRMIST, NCR
+                                    provides an outstanding research
+                                    environment
+                                    complemented by excellence in teaching. They provide a lot of opportunities for
+                                    their
+                                    students, like they organize many workshops, webinars etc. The training imparted
+                                    aims
+                                    to prepare young minds for the challenging opportunities in the IT industry. The
+                                    teachers in SRM provide practical knowledge that makes the students suitable for IT
+                                    sector jobs. The CSE department in SRM also manages to welcome many big
+                                    companies for the students so that they get placed in a good company and their
+                                    future
+                                    is secured.</p>
                             </div>
-                            <div class="input__box">
-                                <span class="details">.phone_number( )</span>
-                                <input name="Phone" type="tel" maxlength="10" minlength="10" placeholder="012-345-6789" required>
+
+                        </div>
+
+                        <div>
+
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                                class="circle blue-bg w-7 h-7 relative right-14 top-14"></div>
+
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                                class="my-5">
+                                <h4 class="rubik md:text-3xl blue text-2xl font-semibold">srm( )</h4>
                             </div>
-                            <div class="input__box">
-                                <span class="details">.year( )</span>
-                                <input name="Year" type="number" maxlength="1" placeholder="1/2/3/4" required>
+
+                            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                                <p class="rubik uppercase text-justify md:text-left text-sm">SRM Institute of Science
+                                    and
+                                    Technology, Ghaziabad was established in
+                                    the year 1997
+                                    and houses over 5,000 students, over 200 faculties, and a plethora of visiting
+                                    faculty
+                                    from across industries. It is a private university located in Ghaziabad, Uttar
+                                    Pradesh,
+                                    India. The university offers undergraduate, postgraduate, and doctoral programs in
+                                    various fields such as engineering, management, computer applications, pharmacy and
+                                    sciences.
+                                    The Ghaziabad campus of SRM Institute of Science and Technology is spread over an
+                                    area of 25 acres and is equipped with modern infrastructure, including
+                                    state-of-the-art
+                                    laboratories, libraries, and classrooms. The campus has a vibrant student community,
+                                    with students from all over the country and the world. SRM Institute of Science and
+                                    Technology, Ghaziabad campus also has collaborations with several international
+                                    universities, which allows students to gain a global perspective on their education.
+                                    The
+                                    university also provides various facilities to its students, including sports
+                                    facilities,
+                                    accommodation, and medical facilities.
+                                    Overall, SRM Institute of Science and Technology, Ghaziabad campus is a reputed
+                                    institution known for its quality education and excellent infrastructure.</p>
                             </div>
-                            <div class="input__box">
-                                <span class="details">.branch( )</span>
-                                <input name="Branch" type="text" placeholder="CSE" required>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Leads -->
+                <div id="leads" class="mx-10 mt-60">
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-3xl">leads( )</h2>
+                        </div>
+                        <div class="container__cards w-fit">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/leads.enc" alt="President" />
+                                <h3 class="card__title">.president( )<br>Samriddha Basu</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="input__box">
-                                <span class="details">.section( )</span>
-                                <input name="Section" type="text" placeholder="A" required>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Vice President" />
+                                <h3 class="card__title">.vice_president( )<br>Archita Sharda</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="400">
+                                <img class="card__image" src="Assets/Leads/exec.jpg" alt="Executive" />
+                                <h3 class="card__title">.executive( )<br>Shreyansh Sharma</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="600">
+                                <img class="card__image" src="Assets/Leads/coexec.jpg" alt="Co-Executive" />
+                                <h3 class="card__title">.co_executive( )<br>Tounav Dutta</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="button">
-                            <input name="submit" type="submit" value="Register">
+                    </div>
+
+                    <!-- Technical -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">technical( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/tech-lead.jpg" alt="Technical Lead" />
+                                <h3 class="card__title">.lead( )<br>Vedant Raizada</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Technical Co-Lead" />
+                                <h3 class="card__title">.co_lead( )<br>Garima Bhandari</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container__cards mt-8">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/web-dev-lead.jpeg" alt="Web-Dev Lead" />
+                                <h3 class="card__title">.web_development_lead( )<br>Navya Srivastava</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="App-Dev Lead" />
+                                <h3 class="card__title">.app_development_lead( )<br>Satyam Saurav</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="400">
+                                <img class="card__image" src="Assets/Leads/cp-lead.png" alt="Competitive Programming Lead" />
+                                <h3 class="card__title">.competitive_programming_lead( )<br>Kinshuk Goel</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Management -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">management( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/management-lead.jpg" alt="Management Lead" />
+                                <h3 class="card__title">.lead( )<br>Jaisheel Nakum</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Management Co-Lead" />
+                                <h3 class="card__title">.co_lead( )<br>Abhishek Khare</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Creative -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">creative( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/creative-lead.jpg" alt="Creative Lead" />
+                                <h3 class="card__title">.lead( )<br>Ekansh Srivastava</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Creative Co-Lead" />
+                                <h3 class="card__title">.co_lead( )<br>Himang Bharadwaj</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">social_media( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/socialmedia-lead.jpg" alt="Social-Media Lead" />
+                                <h3 class="card__title">.lead( )<br>Ishika Mittal</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Social-Media Co-Lead" />
+                                <h3 class="card__title">.co_lead( )<br>Arya Jha</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content  -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">content( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/content-lead.jpeg" alt="Content Lead" />
+                                <h3 class="card__title">.lead( )<br>Chithjyot Kaur</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/content-colead.jpg" alt="Content Co-Lead" />
+                                <h3 class="card__title">.co_lead( )<br>Trupti Sonagra</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Publicity/PR  -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">publicity/pr( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt=" Publicity Lead" />
+                                <h3 class="card__title">.lead( )<br>Krishna Kant</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Lead" />
+                                <h3 class="card__title">.co_lead( )<br>Kumkum Sharma</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Photography -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">photography( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Photography Lead" />
+                                <h3 class="card__title">.lead( )<br>Nikhil Samir Sathe</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Photography Co-Lead" />
+                                <h3 class="card__title">.co_lead( )<br>Kshitij Bhushan</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Treasurer -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="dark-blue rubik md:text-5xl text-2xl">treasurer( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Treasurer" />
+                                <h3 class="card__title">.treasurer( )<br>Siddhant Srivastava</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exceptional Member -->
+                    <div>
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                            class="circle w-10 h-10 light-blue-bg relative top-28 md:top-32 right-16"></div>
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                            <h2 class="light-blue rubik md:text-5xl text-2xl">exceptional_member( )</h2>
+                        </div>
+                        <div class="container__cards">
+                            <div class="card" data-aos="zoom-in-down" data-aos-duration="500">
+                                <img class="card__image" src="Assets/Leads/free-user-icon-3296-thumb.png" alt="Lead" />
+                                <h3 class="lb-bg card__title">.president( )<br>Samriddha Basu</h3>
+                                <div class="card__information">
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae
+                                        mollitia
+                                        consectetur
+                                        voluptatum asperiores optio temporibus dolorum quisquam omnis quia.
+                                    </p>
+                                    <div class="socials">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a class="card__link" href="https://www.instagram.com/"><svg
+                                                class="w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="100" height="100" viewBox="0 0 50 50" style="fill:white;">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://www.github.com/" class="card__link"><svg
+                                                class="w-5 h-5 github mx-2" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                y="0px" width="100" height="100" viewBox="0 0 30 30">
+                                                <path
+                                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load and Popup  -->
+
+                <!-- Add a loading spinner element -->
+                <div id="loadingSpinner"
+                    class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 bg-sky-800 rounded">
+                    <!-- You can replace this with your preferred loading animation -->
+                    <div class="spinner-border text-primary mx-40 my-10 text-center text-white text-2xl" role="status">
+                        <span class="visually-hidden">Submitting...</span>
+                    </div>
+                </div>
+
+                <div class="popup md:w-auto w-full" id="successPopup">
+                    <span class="tick">✔</span> Your response has been recorded! We will get back to you soon!
+                    <!-- You can add additional content or styling for the popup here -->
+                </div>
+
+
+                <!-- Registration -->
+                <div id="register" class="mx-10 mt-60">
+                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                        class="circle w-10 h-10 dark-blue-bg relative top-28 md:top-32 right-16"></div>
+                    <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-20">
+                        <h2 class="dark-blue rubik md:text-5xl text-3xl">registration( )</h2>
+                    </div>
+                    <div class="form">
+
+                        <div class="container px-0" data-aos="fade-up" data-aos-duration="500">
+                            <form
+                                action="https://script.google.com/macros/s/AKfycbyJmp5txHhx9ZFLAA4raJJk8vDjX5oILHjczepK9rS-TI7r3ZShjFyd8aA_d1XWZkNN/exec"
+                                id="register-form" method="post">
+                                <div class="user__details text-black">
+                                    <div class="input__box">
+                                        <span class="details">.first_name( )</span>
+                                        <input class="cursor" name="FirstName" type="text" placeholder="John" required>
+                                    </div>
+                                    <div class="input__box">
+                                        <span class="details">.last_name( )</span>
+                                        <input class="cursor" name="LastName" type="text" placeholder="Smith" required>
+                                    </div>
+                                    <div class="input__box">
+                                        <span class="details">.email( )</span>
+                                        <input class="cursor" name="Email" type="email"
+                                            placeholder="johnsmith@hotmail.com" required>
+                                    </div>
+                                    <div class="input__box">
+                                        <span class="details">.registration_number( )</span>
+                                        <input class="cursor" name="RegNo" type="text" maxlength="17"
+                                            pattern="[A-Za-z]{2}\d{1,15}" placeholder="RA2111003030001" required>
+                                    </div>
+                                    <div class="input__box">
+                                        <span class="details">.phone_number( )</span>
+                                        <input class="cursor" name="Phone" type="tel" maxlength="10" minlength="10"
+                                            placeholder="012-345-6789" required>
+                                    </div>
+                                    <!-- <div class="input__box">
+                                        <span class="details">.year( )</span>
+                                        <input class="cursor" name="Year" type="number" maxlength="1"
+                                            placeholder="1/2/3/4" required>
+                                    </div> -->
+
+                                    <div class="input__box">
+                                        <span class="details">.year( )</span>
+                                        <select class="cursor text-black text-sm w-full h-3/6 rounded" name="Year" required>
+                                            <option class="text-gray-400" value="" disabled selected>Select year</option>
+                                            <option class="text-black" value="1">1</option>
+                                            <option class="text-black" value="2">2</option>
+                                            <option class="text-black" value="3">3</option>
+                                            <option class="text-black" value="4">4</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input__box">
+                                        <span class="details">.branch( )</span>
+                                        <input class="cursor" name="Branch" type="text" placeholder="CSE" required>
+                                    </div>
+                                    <div class="input__box">
+                                        <span class="details">.section( )</span>
+                                        <input class="cursor" name="Section" type="text" placeholder="A" required>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <input class="cursor-auto" name="submit" type="submit" value="Register">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact  -->
+                <div id="contact" class="mx-10 mt-60">
+                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                        class="circle w-10 h-10 dark-blue-bg relative top-20 md:top-24 right-16"></div>
+                    <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="my-10">
+                        <h2 class="dark-blue rubik md:text-5xl text-3xl">contact( )</h2>
+                    </div>
+                    <form id="contact-form" name="contact" method="post"
+                        action="https://script.google.com/macros/s/AKfycbzspPbTqQjVIKTJlRqD9nyYFMAdRDyRDDzwAkjfTa4I4cO2IDfYdwG_oFgn-Mq8dRs_/exec"
+                        class="container px-0" data-aos="fade-up" data-aos-duration="500">
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox">
+                                    <input name="FirstName" type="text" required="required">
+                                    <span class="text">First Name</span>
+                                    <span class="contact-line"></span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="inputBox">
+                                    <input name="LastName" type="text" required="required">
+                                    <span class="text">Last Name</span>
+                                    <span class="contact-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox">
+                                    <input name="Email" type="text" required="required">
+                                    <span class="text">Email</span>
+                                    <span class="contact-line"></span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="inputBox">
+                                    <input name="Mobile" type="text" required="required">
+                                    <span class="text">Mobile</span>
+                                    <span class="contact-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox textarea">
+                                    <textarea name="Message" required="required"></textarea>
+                                    <span class="text">Type your message Here...</span>
+                                    <span class="contact-line"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="col">
+                                <input name="submit" type="submit" value="Send">
+                            </div>
                         </div>
                     </form>
                 </div>
-            </div>
+
+                <!-- Leads div was here  -->
+
+            </main>
         </div>
+        <!-- Footer  -->
+        <footer class="text-center text-xl h-40 flex justify-center items-center">
+            Breaking News: Website Complete! Insert happy dance here 💃🕺
+        </footer>
 
-        <!-- Contact Us -->
-        <div id="contact">
-            <div class="contact-ball" data-aos="fade-right" data-aos-duration="1000">
-                <div class="contact-head">contact( )</div>
-            </div>
-            <form id="contact-form" name="contact" method="post"
-                action="https://script.google.com/macros/s/AKfycbzspPbTqQjVIKTJlRqD9nyYFMAdRDyRDDzwAkjfTa4I4cO2IDfYdwG_oFgn-Mq8dRs_/exec"
-                class="container" data-aos="fade-up" data-aos-duration="1000">
-                <div class="row100">
-                    <div class="col">
-                        <div class="inputBox">
-                            <input name="FirstName" type="text" required="required">
-                            <span class="text">First Name</span>
-                            <span class="contact-line"></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="inputBox">
-                            <input name="LastName" type="text" required="required">
-                            <span class="text">Last Name</span>
-                            <span class="contact-line"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row100">
-                    <div class="col">
-                        <div class="inputBox">
-                            <input name="Email" type="text" required="required">
-                            <span class="text">Email</span>
-                            <span class="contact-line"></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="inputBox">
-                            <input name="Mobile" type="text" required="required">
-                            <span class="text">Mobile</span>
-                            <span class="contact-line"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row100">
-                    <div class="col">
-                        <div class="inputBox textarea">
-                            <textarea name="Message" required="required"></textarea>
-                            <span class="text">Type your message Here...</span>
-                            <span class="contact-line"></span>
-                        </div>
-                    </div>
-                </div>
+    </div>
 
-                <div class="row100">
-                    <div class="col">
-                        <input name="submit" type="submit" value="Send">
-                    </div>
-                </div>
-            </form>
-        </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
-        <!-- Javascript -->
-        <script src="script.js"></script>
-
-        <!-- Animation on scroll -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <script>
-            AOS.init();
-        </script>
+    <!-- Animate on Scroll -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
